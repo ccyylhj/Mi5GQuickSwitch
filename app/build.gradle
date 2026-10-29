@@ -1,0 +1,28 @@
+plugins {
+    id("com.android.application")
+}
+
+android {
+    namespace = "com.example.netswitch"
+    compileSdkVersion "android-34-ext12"
+
+    defaultConfig {
+        applicationId = "com.example.netswitch"
+        minSdk = 28
+        targetSdk = 34
+        versionCode = 1
+        versionName = "1.0"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+        }
+        debug {
+        }
+    }
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_17
+        targetCompatibility = JavaVersion.VERSION_17
+    }
+}
